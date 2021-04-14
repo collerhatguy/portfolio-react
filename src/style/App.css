@@ -44,4 +44,35 @@
 header {
   font-size: 48.54px;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 720px) {
+  .project-list {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header {
+    font-size: 32.36px;
+  }
+  .project {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 10px;
+    margin: 10px;
+  }
+}
 /*# sourceMappingURL=App.css.map */

@@ -6,6 +6,7 @@
 // 4. classes
 // 5. tags
 // 6. animations
+// 7. media queries
 
 
 
@@ -73,3 +74,23 @@ img {
 }
 
 // 6. animations
+
+// 7. media queries
+@media only screen and (min-width: 300px) and (max-width: 720px) {
+    .project-list {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    header {
+        @include font-size(2);
+    }
+    .project {
+        width: max-content;
+        padding: 10px;
+        margin: 10px;
+    }
+}
