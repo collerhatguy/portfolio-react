@@ -1,14 +1,8 @@
 import React from 'react'
 import Project from "./Project";
 
-export default function ProjectList() {
-    const projects = [
-        "hearthstone-react-2", 
-        "coal-miner-fixed", "calculator", 
-        "JosephVoelker", "shapeMaker", 
-        "christmasTree", "Tyson.css", 
-        "emotional-furnace"
-    ]
+export default function ProjectList({projects}) {
+    
     return (
         <div className="project-list">
             {projects.map((project, index) => {
