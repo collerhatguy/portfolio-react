@@ -1,8 +1,10 @@
 import React from 'react'
 
-export default function Project({project}) {
+export default function Project({project, indexOfMain, index}) {
+    var className = "";
+    indexOfMain === index ? className = "project main-project" : className = "project";
     return (
-        <div className="project">
+        <div className={className}>
             <h2 className="project-name">{project}</h2>
             <h3 className="project-live-server">
                 Live Server: 

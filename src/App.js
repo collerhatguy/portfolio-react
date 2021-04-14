@@ -26,7 +26,7 @@ function App() {
             onClick={() => handleProjectRight()}
             className="btn right-btn">Right</button> 
       </div>
-      <ProjectList projects={projects}/>
+      <ProjectList projects={projects} mainProject={mainProject}/>
     </div>
   );
 }
