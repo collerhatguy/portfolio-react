@@ -11,13 +11,9 @@ export default function ProjectList() {
     ]
     return (
         <div className="project-list">
-            <header>
-                <h1>Jacobs Projects:</h1>
-            </header>
             {projects.map((project, index) => {
                 return <Project project={project} key={index} />
             })}
-            
         </div>
     )
 }

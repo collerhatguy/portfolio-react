@@ -56,9 +56,18 @@ $golden-ratio: 1.618;
 .project-repository {
     @include font-size(1);
 }
+.buttons-container {};
+.btn {
+    @include font-size(1);
+    width: min-content;
+    padding: 10px;
+    margin: 10px;
+}
 
 // 5. tags
-header {}
+header {
+    @include font-size(3);
+}
 h1 {}
 img {
 }

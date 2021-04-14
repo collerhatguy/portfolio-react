@@ -31,4 +31,17 @@
 .project-repository {
   font-size: 16.18px;
 }
+
+.btn {
+  font-size: 16.18px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 10px;
+  margin: 10px;
+}
+
+header {
+  font-size: 48.54px;
+}
 /*# sourceMappingURL=App.css.map */
