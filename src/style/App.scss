@@ -22,6 +22,9 @@
 $primary-color: black;
 $secondary-color: white;
 $tertiary-color: orange;
+$base-font-size: 10px;
+$golden-ratio: 1.618;
+
 
 // 3. mixins
 @mixin center-flex() {
@@ -29,16 +32,33 @@ $tertiary-color: orange;
     justify-content: center;
     align-items: center;
 }
+@mixin font-size($size) {
+    font-size: $base-font-size * $golden-ratio * $size;
+}
 
 
 // 4. classes
-.project-list {}
-.project {}
-.project-live-server {}
-.project-repository {}
-.project {}
+.project-list {
+    // I want to set it uo so that the top project has a whole row to itself
+    display: grid;
+    grid-template-rows: 300px repeat(2, 200px);
+    grid-template-columns: repeat(3, 30vw);
+}
+.project {
+    border: solid 3px $tertiary-color;
+}
+.project-name {
+    @include font-size(2);
+}
+.project-live-server {
+    @include font-size(1);
+}
+.project-repository {
+    @include font-size(1);
+}
 
 // 5. tags
-img {}
+img {
+}
 
 // 6. animations

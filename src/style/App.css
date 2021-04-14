@@ -6,4 +6,29 @@
 .App {
   text-align: center;
 }
+
+.project-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 300px (200px)[2];
+      grid-template-rows: 300px repeat(2, 200px);
+  -ms-grid-columns: (30vw)[3];
+      grid-template-columns: repeat(3, 30vw);
+}
+
+.project {
+  border: solid 3px orange;
+}
+
+.project-name {
+  font-size: 32.36px;
+}
+
+.project-live-server {
+  font-size: 16.18px;
+}
+
+.project-repository {
+  font-size: 16.18px;
+}
 /*# sourceMappingURL=App.css.map */

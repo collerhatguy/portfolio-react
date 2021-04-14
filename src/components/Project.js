@@ -12,10 +12,7 @@ export default function Project({project}) {
                 Repository: 
                 <a target="_blank" href={`https://github.com/collerhatguy/${project}`}>click here</a>
             </h3>
-            <img href={`../projectPhotos/${project}.png`} style={{
-                width: "100px",
-                height: "100px",
-            }}/>
+            <img href={`../projectPhotos/${project}.png`}/>
         </div>
     )
 }
