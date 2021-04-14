@@ -47,6 +47,7 @@ $golden-ratio: 1.618;
 }
 .project {
     border: solid 3px $tertiary-color;
+
 }
 .project-name {
     @include font-size(2);
@@ -76,13 +77,13 @@ img {
 // 6. animations
 
 // 7. media queries
-@media only screen and (min-width: 300px) and (max-width: 720px) {
+@media only screen and (min-width: 240px) and (max-width: 720px) {
     .project-list {
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
     }
     header {

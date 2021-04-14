@@ -45,7 +45,7 @@ header {
   font-size: 48.54px;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 720px) {
+@media only screen and (min-width: 240px) and (max-width: 720px) {
   .project-list {
     width: 100vw;
     display: -webkit-box;
@@ -57,10 +57,10 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
