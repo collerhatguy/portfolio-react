@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from "react-router-dom";
 
 export default function AboutPage() {
     return (
@@ -9,6 +10,9 @@ export default function AboutPage() {
             async and await, and higher order methods. I am also 
             attending Lambda’s coding bootcamp. I have been programming 
             on my own for several months now and plan to do so for my whole life.
+            <Link to="/projects" className="link">
+                My Projects
+            </Link>
         </div>
     )
 }

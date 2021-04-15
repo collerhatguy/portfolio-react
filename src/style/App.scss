@@ -88,7 +88,7 @@ header {
 h1 {}
 img {
 }
-a {
+a, .link {
     text-decoration: none;
     color: $tertiary-color-350;
     &:hover {

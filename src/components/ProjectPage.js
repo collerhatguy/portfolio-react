@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectList from "./ProjectList";
 import useMenuSelector from "../hooks/useMenuSelector";
+import {Link} from "react-router-dom";
 
 export default function ProjectPage() {
     const projects = [
@@ -25,6 +26,9 @@ export default function ProjectPage() {
                     className="btn right-btn">Right</button> 
             </div>
             <ProjectList projects={projects} mainProject={mainProject}/>
+            <Link to="/">
+                About Page
+            </Link>
         </div>
     )
 }
