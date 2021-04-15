@@ -1,15 +1,12 @@
 import React from 'react';
 
 export default function Project({project, indexOfMain, index}) {
-    var className = "";
-    indexOfMain === index ? className = "project main-project" : className = "project";
     return (
-        <div className={className}>
+        <div className={indexOfMain === index ? "project main-project" : "project"}>
             <h2 className="project-name">{project}</h2>
             <h3 className="project-live-server">
                 Live Server: 
                 <a  
-                    tabIndex="0"
                     target="_blank" 
                     href={`https://collerhatguy.github.io/${project}/`}
                 >click here</a>
@@ -17,7 +14,6 @@ export default function Project({project, indexOfMain, index}) {
             <h3 className="project-repository">
                 Repository: 
                 <a 
-                    tabIndex="0"
                     target="_blank" 
                     href={`https://github.com/collerhatguy/${project}`}
                 >click here</a>

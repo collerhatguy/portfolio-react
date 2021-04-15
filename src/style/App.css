@@ -94,6 +94,11 @@ nav {
   color: #ffedcc;
 }
 
+nav .link {
+  font-size: 32.36px;
+  padding: .2em;
+}
+
 a, .link {
   font-size: 16.18px;
   text-decoration: none;

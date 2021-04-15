@@ -108,6 +108,10 @@ nav {
     justify-content: space-evenly;
     background-color: $secondary-color;
     color: $tertiary-color-50;
+    .link {
+        @include font-size(2);
+        padding: .2em;
+    }
 }
 a, .link {
     @include font-size(1);

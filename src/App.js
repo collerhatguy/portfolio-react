@@ -11,7 +11,7 @@ function App() {
         <Link to="/projects" className="link">
           My Projects
         </Link>
-        <Link to="/">
+        <Link to="/" exact className="link">
           About Page
         </Link>
       </nav>
