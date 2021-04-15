@@ -36,6 +36,21 @@ $golden-ratio: 1.618;
 @mixin font-size($size) {
     font-size: $base-font-size * $golden-ratio * $size;
 }
+@mixin button() {
+    text-decoration: none;
+    transition-duration: 300ms;
+    background-color: $secondary-color;
+    color: $tertiary-color-300;
+    &:hover {
+        background-color: $tertiary-color-300;
+        color: $secondary-color;
+    }
+    &:focus {
+        outline: none;
+        background-color: $tertiary-color-300;
+        color: $secondary-color;
+    }
+}
 
 
 // 4. classes
@@ -63,40 +78,41 @@ $golden-ratio: 1.618;
 .project-repository {
     @include font-size(1);
 }
-.buttons-container {};
 .btn {
     @include font-size(1);
     width: min-content;
     padding: 10px;
     margin: 10px;
-    color: $tertiary-color-350;
-    background-color: $secondary-color;
     border: solid 3px $tertiary-color-200;
-    &:hover {
-        background-color: $tertiary-color-350;
-        color: $secondary-color;
-    }
+    @include button();
 }
 
 // 5. tags
 body {
     background-color: $tertiary-color-50;
 }
-header {
+h1 {
     @include font-size(3);
 }
-h1 {}
-img {
+h2 {
+    @include font-size(2);
+}
+h3 {
+    @include font-size(2);
+}
+p {
+    @include font-size(1);
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $secondary-color;
+    color: $tertiary-color-50;
 }
 a, .link {
-    text-decoration: none;
-    color: $tertiary-color-350;
-    &:hover {
-        background-color: $tertiary-color-350;
-        color: $secondary-color;
-    }
+    @include font-size(1);
+    @include button();
 }
-
 // 6. animations
 
 // 7. media queries

@@ -1,18 +1,20 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 
 export default function AboutPage() {
     return (
         <div>
-            I am a self taught web developer that understands and 
-            has done projects with HTML, CSS, JavaScript, and React. 
-            You can expect me to use destructuring, api integration, 
-            async and await, and higher order methods. I am also 
-            attending Lambda’s coding bootcamp. I have been programming 
-            on my own for several months now and plan to do so for my whole life.
-            <Link to="/projects" className="link">
-                My Projects
-            </Link>
+            <header>
+                <h1>Jacob Shomali's Portfolio Website</h1>
+            </header>
+            <h2>Who am I?</h2>
+            <p>
+                I am a self taught web developer that understands and 
+                has done projects with HTML, CSS, JavaScript, and React. 
+                You can expect me to use destructuring, api integration, 
+                async and await, and higher order methods. I am also 
+                attending Lambda’s coding bootcamp. I have been programming 
+                on my own for several months now and plan to do so for my whole life.
+            </p>
         </div>
     )
 }
