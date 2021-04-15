@@ -10,18 +10,26 @@
 .project-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 300px (200px)[2];
-      grid-template-rows: 300px repeat(2, 200px);
-  -ms-grid-columns: (30vw)[3];
-      grid-template-columns: repeat(3, 30vw);
+  -ms-grid-rows: 300px;
+      grid-template-rows: 300px;
+  grid-auto-rows: minmax(200px, auto);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.main-project {
+  -ms-grid-row: 1;
+  grid-area: 1 / span 3;
 }
 
 .project {
-  border: solid 3px orange;
+  border: solid 3px #ffa600;
+  background-color: white;
 }
 
 .project-name {
   font-size: 32.36px;
+  color: #664200;
 }
 
 .project-live-server {
@@ -39,10 +47,32 @@
   width: min-content;
   padding: 10px;
   margin: 10px;
+  color: #332100;
+  background-color: white;
+  border: solid 3px #ffa600;
+}
+
+.btn:hover {
+  background-color: #332100;
+  color: white;
+}
+
+body {
+  background-color: #ffedcc;
 }
 
 header {
   font-size: 48.54px;
+}
+
+a {
+  text-decoration: none;
+  color: #332100;
+}
+
+a:hover {
+  background-color: #332100;
+  color: white;
 }
 
 @media only screen and (min-width: 240px) and (max-width: 720px) {
@@ -73,6 +103,9 @@ header {
     width: max-content;
     padding: 10px;
     margin: 10px;
+  }
+  .btn {
+    display: none;
   }
 }
 /*# sourceMappingURL=App.css.map */

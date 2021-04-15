@@ -20,9 +20,13 @@
 }
 
 // 2. variables
-$primary-color: black;
-$secondary-color: white;
-$tertiary-color: orange;
+$primary-color: hsl(0, 0%, 0%);
+$secondary-color: hsl(0, 0%, 100%);
+$tertiary-color-50: hsl(39, 100%, 90%);
+$tertiary-color-100: hsl(39, 100%, 80%);
+$tertiary-color-200: hsl(39, 100%, 50%);
+$tertiary-color-300: hsl(39, 100%, 20%);
+$tertiary-color-350: hsl(39, 100%, 10%);
 $base-font-size: 10px;
 $golden-ratio: 1.618;
 
@@ -42,15 +46,20 @@ $golden-ratio: 1.618;
 .project-list {
     // I want to set it uo so that the top project has a whole row to itself
     display: grid;
-    grid-template-rows: 300px repeat(2, 200px);
-    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: 300px;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: repeat(3, 1fr);
+}
+.main-project {
+    grid-area: 1 / span 3;
 }
 .project {
-    border: solid 3px $tertiary-color;
-
+    border: solid 3px $tertiary-color-200;
+    background-color: $secondary-color;
 }
 .project-name {
     @include font-size(2);
+    color: $tertiary-color-300;
 }
 .project-live-server {
     @include font-size(1);
@@ -64,14 +73,32 @@ $golden-ratio: 1.618;
     width: min-content;
     padding: 10px;
     margin: 10px;
+    color: $tertiary-color-350;
+    background-color: $secondary-color;
+    border: solid 3px $tertiary-color-200;
+    &:hover {
+        background-color: $tertiary-color-350;
+        color: $secondary-color;
+    }
 }
 
 // 5. tags
+body {
+    background-color: $tertiary-color-50;
+}
 header {
     @include font-size(3);
 }
 h1 {}
 img {
+}
+a {
+    text-decoration: none;
+    color: $tertiary-color-350;
+    &:hover {
+        background-color: $tertiary-color-350;
+        color: $secondary-color;
+    }
 }
 
 // 6. animations
@@ -93,5 +120,8 @@ img {
         width: max-content;
         padding: 10px;
         margin: 10px;
+    }
+    .btn {
+        display: none;
     }
 }
