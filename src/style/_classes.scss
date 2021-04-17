@@ -1,0 +1,33 @@
+
+.project-list {
+    // I want to set it uo so that the top project has a whole row to itself
+    display: grid;
+    grid-template-rows: 300px;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: repeat(3, 1fr);
+}
+.main-project {
+    grid-area: 1 / span 3;
+}
+.project {
+    border: solid 3px $tertiary-color-200;
+    background-color: $secondary-color;
+}
+.project-name {
+    @include font-size(2);
+    color: $tertiary-color-300;
+}
+.project-live-server {
+    @include font-size(1);
+}
+.project-repository {
+    @include font-size(1);
+}
+.btn {
+    @include font-size(1);
+    width: min-content;
+    padding: 10px;
+    margin: 10px;
+    border: solid 3px $tertiary-color-200;
+    @include button();
+}

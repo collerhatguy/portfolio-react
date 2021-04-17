@@ -16,16 +16,7 @@
 }
 
 // 2. variables
-$primary-color: hsl(0, 0%, 0%);
-$secondary-color: hsl(0, 0%, 100%);
-$tertiary-color-50: hsl(39, 100%, 90%);
-$tertiary-color-100: hsl(39, 100%, 80%);
-$tertiary-color-200: hsl(39, 100%, 50%);
-$tertiary-color-300: hsl(39, 100%, 20%);
-$tertiary-color-350: hsl(39, 100%, 10%);
-$base-font-size: 10px;
-$golden-ratio: 1.618;
-
+@import "./variables";
 
 // 3. mixins
 @mixin center-flex() {
@@ -54,69 +45,11 @@ $golden-ratio: 1.618;
 
 
 // 4. classes
-.project-list {
-    // I want to set it uo so that the top project has a whole row to itself
-    display: grid;
-    grid-template-rows: 300px;
-    grid-auto-rows: minmax(200px, auto);
-    grid-template-columns: repeat(3, 1fr);
-}
-.main-project {
-    grid-area: 1 / span 3;
-}
-.project {
-    border: solid 3px $tertiary-color-200;
-    background-color: $secondary-color;
-}
-.project-name {
-    @include font-size(2);
-    color: $tertiary-color-300;
-}
-.project-live-server {
-    @include font-size(1);
-}
-.project-repository {
-    @include font-size(1);
-}
-.btn {
-    @include font-size(1);
-    width: min-content;
-    padding: 10px;
-    margin: 10px;
-    border: solid 3px $tertiary-color-200;
-    @include button();
-}
+@import "./classes";
 
 // 5. tags
-body {
-    background-color: $tertiary-color-50;
-}
-h1 {
-    @include font-size(3);
-}
-h2 {
-    @include font-size(2);
-}
-h3 {
-    @include font-size(2);
-}
-p {
-    @include font-size(1);
-}
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: $secondary-color;
-    color: $tertiary-color-50;
-    .link {
-        @include font-size(2);
-        padding: .2em;
-    }
-}
-a, .link {
-    @include font-size(1);
-    @include button();
-}
+@import "./tags";
+
 // 6. animations
 
 // 7. media queries
