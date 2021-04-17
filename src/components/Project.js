@@ -18,7 +18,6 @@ export default function Project({project, indexOfMain, index}) {
                     href={`https://github.com/collerhatguy/${project}`}
                 >click here</a>
             </h3>
-            <img href={`../projectPhotos/${project}.png`}/>
         </div>
     )
 }
