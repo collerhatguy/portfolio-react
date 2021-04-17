@@ -11,13 +11,13 @@ function App() {
         <Link to="/projects" className="link">
           My Projects
         </Link>
-        <Link to="/" exact className="link">
+        <Link to="" exact className="link">
           About Page
         </Link>
       </nav>
       <Switch>
         <Route path="/projects" component={ProjectPage}/>
-        <Route path="/" exact component={AboutPage}/>
+        <Route path="" exact component={AboutPage}/>
       </Switch>
     </Router>
   );
