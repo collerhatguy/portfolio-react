@@ -120,6 +120,11 @@ a:focus, .link:focus {
           animation: project-page 300ms ease-in-out forwards;
 }
 
+#about-page {
+  -webkit-animation: project-page 300ms ease-in-out forwards;
+          animation: project-page 300ms ease-in-out forwards;
+}
+
 @-webkit-keyframes project-page {
   from {
     -webkit-transform: translateX(-100vw);
@@ -139,16 +144,6 @@ a:focus, .link:focus {
   to {
     -webkit-transform: translateX(0vw);
             transform: translateX(0vw);
-  }
-}
-
-@-webkit-keyframes project {
-  0% {
-  }
-}
-
-@keyframes project {
-  0% {
   }
 }
 

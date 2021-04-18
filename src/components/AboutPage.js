@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutPage() {
     return (
-        <div>
+        <div id="about-page">
             <header>
                 <h1>Jacob Shomali's Portfolio Website</h1>
             </header>
