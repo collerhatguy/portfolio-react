@@ -39,7 +39,7 @@ export default function ProjectPage() {
     ]
     const [handleProjectLeft, handleProjectRight, mainProject] = useMenuSelector(projects);
     return (
-        <div>
+        <div id="project-page">
             <header>
                 <h1>Jacobs Projects:</h1>
             </header>

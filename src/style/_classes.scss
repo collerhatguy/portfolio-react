@@ -17,10 +17,7 @@
     @include font-size(2);
     color: $tertiary-color-300;
 }
-.project-live-server {
-    @include font-size(1);
-}
-.project-repository {
+.project-live-server, .project-repository  {
     @include font-size(1);
 }
 .btn {

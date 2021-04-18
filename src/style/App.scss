@@ -5,8 +5,9 @@
 // 3. mixins
 // 4. classes
 // 5. tags
-// 6. animations
-// 7. media queries
+// 6. ids
+// 7. animations
+// 8. media queries
 
 // 1. default stats
 * {
@@ -50,9 +51,27 @@
 // 5. tags
 @import "./tags";
 
-// 6. animations
+// 6. ids
+#project-page {
+    animation: project-page 300ms ease-in-out forwards;
+}
+// 7. animations
 
-// 7. media queries
+@keyframes project-page {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(0vw);
+    }
+}
+@keyframes project {
+    0% {
+        
+    }
+}
+
+// 8. media queries
 @media only screen and (min-width: 240px) and (max-width: 720px) {
     .project-list {
         width: 100vw;

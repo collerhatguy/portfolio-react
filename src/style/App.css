@@ -29,11 +29,7 @@
   color: #664200;
 }
 
-.project-live-server {
-  font-size: 16.18px;
-}
-
-.project-repository {
+.project-live-server, .project-repository {
   font-size: 16.18px;
 }
 
@@ -117,6 +113,43 @@ a:focus, .link:focus {
   outline: none;
   background-color: #664200;
   color: white;
+}
+
+#project-page {
+  -webkit-animation: project-page 300ms ease-in-out forwards;
+          animation: project-page 300ms ease-in-out forwards;
+}
+
+@-webkit-keyframes project-page {
+  from {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  to {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+}
+
+@keyframes project-page {
+  from {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  to {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+}
+
+@-webkit-keyframes project {
+  0% {
+  }
+}
+
+@keyframes project {
+  0% {
+  }
 }
 
 @media only screen and (min-width: 240px) and (max-width: 720px) {
