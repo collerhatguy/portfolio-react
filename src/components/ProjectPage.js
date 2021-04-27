@@ -17,6 +17,10 @@ export default function ProjectPage() {
         img: "https://imgur.com/3GrWKTx",
       },
       {
+        name: "zelda",
+        img: "https://imgur.com/3GrWKTx",
+      },
+      {
         name:  "calculator",
         img: "https://imgur.com/eFniWMh",
       },
