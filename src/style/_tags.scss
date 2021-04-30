@@ -29,3 +29,7 @@ a, .link {
     @include font-size(1);
     @include button();
 }
+img {
+    width: 100%;
+    height: 100%;
+}

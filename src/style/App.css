@@ -60,6 +60,11 @@
   color: white;
 }
 
+.project-photo {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background-color: #ffedcc;
 }
@@ -114,6 +119,11 @@ a:focus, .link:focus {
   outline: none;
   background-color: #664200;
   color: white;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 #project-page {

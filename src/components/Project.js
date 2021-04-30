@@ -18,9 +18,13 @@ export default function Project({project, indexOfMain, index}) {
                     href={`https://github.com/collerhatguy/${project.name}`}
                 >click here</a>
             </h3>
+            <div 
+                className="project-photo"
+                style={{ backgroundImage: `url(/projectPhotos/${project.name}.png)`}}></div>
+            {/* <img href={`/projectPhotos/${project.name}.png`}></img>
             <blockquote class="imgur-embed-pub" lang="en" data-id="a/jz7cro0" data-context="false" >
                 <a href={project.img}></a>
-            </blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+            </blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script> */}
         </div>
     )
 }
