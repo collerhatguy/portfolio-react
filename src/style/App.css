@@ -23,6 +23,19 @@
 .project {
   border: solid 3px #ffa600;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .project-name {
@@ -61,7 +74,10 @@
 }
 
 .project-photo {
-  width: 100%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-size: 100% 100%;
+  width: 60%;
   height: 100%;
 }
 
