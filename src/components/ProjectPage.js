@@ -9,6 +9,7 @@ export default function ProjectPage() {
       "face-maker-2",
       "zelda",
       "calculator",
+      "front-end-mentor-2",
       "front-end-mentor-1",
       "JosephVoelker",
       "shapeMaker",
