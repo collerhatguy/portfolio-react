@@ -4,16 +4,16 @@ import useMenuSelector from "../hooks/useMenuSelector";
 
 export default function ProjectPage() {
     const projects = [
-                    "hearthstone-react-2",
-                    "coal-miner-fixed",
-                    "face-maker-2",
-                    "zelda",
-                    "calculator",
-                    "front-end-mentor-1",
-                    "JosephVoelker",
-                    "shapeMaker",
-                    "christmasTree",
-                    "Tyson.css",
+      "hearthstone-react-2",
+      "coal-miner-fixed",
+      "face-maker-2",
+      "zelda",
+      "calculator",
+      "front-end-mentor-1",
+      "JosephVoelker",
+      "shapeMaker",
+      "christmasTree",
+      "Tyson.css",
     ]
     const [handleProjectLeft, handleProjectRight, mainProject] = useMenuSelector(projects);
     return (
