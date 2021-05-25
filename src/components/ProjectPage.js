@@ -7,6 +7,7 @@ export default function ProjectPage() {
       "hearthstone-react-2",
       "coal-miner-fixed",
       "face-maker-2",
+      "countdown-app",
       "zelda",
       "calculator",
       "front-end-mentor-2",
