@@ -6,6 +6,7 @@ export default function ProjectPage() {
     const projects = [
       "hearthstone-react-2",
       "coal-miner-fixed",
+      "crowd-funding-frontend-mentor-3",
       "face-maker-2",
       "countdown-app",
       "zelda",
