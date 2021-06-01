@@ -15,6 +15,11 @@ export default function AboutPage() {
                 attending Lambda’s coding bootcamp. I have been programming 
                 on my own for several months now and plan to do so for my whole life.
             </p>
+            <footer>
+                <a href="mailto:jacobshomali3@gmail.com">jacobshomali3@gmail.com</a>
+                <a href="tel:+8102315851">810-231-5851</a>
+                <address>6402 Maplebrook Lane, Flint MI, 48507</address>
+            </footer>
         </div>
     )
 }
