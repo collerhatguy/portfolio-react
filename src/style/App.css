@@ -7,17 +7,17 @@
 .project-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 300px;
-      grid-template-rows: 300px;
-  grid-auto-rows: minmax(200px, auto);
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 40vw;
+      grid-template-rows: 40vw;
+  grid-auto-rows: minmax(25vw, auto);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   gap: .4em;
 }
 
 .main-project {
   -ms-grid-row: 1;
-  grid-area: 1 / span 3;
+  grid-area: 1 / span 2;
 }
 
 .project {
@@ -78,8 +78,9 @@
   -webkit-transform-origin: center;
           transform-origin: center;
   background-size: 100% 100%;
-  width: 60%;
+  width: 50%;
   height: 100%;
+  margin-bottom: 1em;
 }
 
 body {
@@ -249,6 +250,10 @@ footer a:focus {
   }
   .btn {
     display: none;
+  }
+  .project-photo {
+    width: 70vw;
+    height: 30vw;
   }
 }
 /*# sourceMappingURL=App.css.map */

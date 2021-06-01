@@ -2,13 +2,13 @@
 .project-list {
     // I want to set it uo so that the top project has a whole row to itself
     display: grid;
-    grid-template-rows: 300px;
-    grid-auto-rows: minmax(200px, auto);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40vw;
+    grid-auto-rows: minmax(25vw, auto);
+    grid-template-columns: repeat(2, 1fr);
     gap: .4em;
 }
 .main-project {
-    grid-area: 1 / span 3;
+    grid-area: 1 / span 2;
 }
 .project {
     border: solid 3px $tertiary-color-200;
@@ -36,6 +36,7 @@
 .project-photo {
     transform-origin: center;
     background-size: 100% 100%;
-    width: 60%;
+    width: 50%;
     height: 100%;
+    margin-bottom: 1em;
 }
