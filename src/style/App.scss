@@ -32,6 +32,7 @@
     transition-duration: 300ms;
     background-color: $secondary-color;
     color: $tertiary-color-300;
+    padding: .2em;
     &:hover {
         background-color: $tertiary-color-300;
         color: $secondary-color;
