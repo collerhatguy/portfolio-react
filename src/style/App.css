@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100%;
 }
 
 .project-list {
@@ -195,6 +198,18 @@ footer a:focus {
 #about-page {
   -webkit-animation: project-page 300ms ease-in-out forwards;
           animation: project-page 300ms ease-in-out forwards;
+}
+
+#about-page .face-picture-container {
+  width: 40vw;
+  height: 40vw;
+  margin: 2rem auto 0;
+}
+
+#about-page img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
 }
 
 @-webkit-keyframes project-page {

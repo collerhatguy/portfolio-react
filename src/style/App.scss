@@ -14,6 +14,8 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 // 2. variables
 @import "./variables";
@@ -54,9 +56,20 @@
 // 6. ids
 #project-page {
     animation: project-page 300ms ease-in-out forwards;
+
 }
 #about-page {
     animation: project-page 300ms ease-in-out forwards;
+    .face-picture-container {
+        width: 40vw;
+        height: 40vw;
+        margin: 2rem auto 0;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
 }
 
 // 7. animations
