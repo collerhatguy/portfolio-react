@@ -22,7 +22,7 @@ nav {
     color: $tertiary-color-50;
     .link {
         @include font-size(2);
-        padding: .2em;
+        padding: .2rem;
     }
 }
 a, .link {
@@ -39,9 +39,9 @@ footer {
     justify-content: center;
     flex-flow: column wrap;
     border: 2px solid black;
-    border-radius: 10px;
-    width: 50%;
-    margin: 50px auto;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    padding: 2rem 0;
     a {
         text-decoration: none;
         transition-duration: 300ms;
@@ -58,5 +58,4 @@ footer {
             background-color: $primary-color;
         }
     }
-    width: 100%;
 }
