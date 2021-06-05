@@ -28,7 +28,7 @@
 .btn {
     @include font-size(1);
     width: min-content;
-    padding: 2rem;
+    padding: 1rem 2rem !important;
     margin: 2rem;
     border: solid 3px $tertiary-color-200;
     @include button();

@@ -110,7 +110,7 @@ body {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  padding: 2rem;
+  padding: 1rem 2rem !important;
   margin: 2rem;
   border: solid 3px #ffa600;
   text-decoration: none;
