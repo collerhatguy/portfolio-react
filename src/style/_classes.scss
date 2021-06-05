@@ -5,7 +5,7 @@
     grid-template-rows: 40vw;
     grid-auto-rows: minmax(25vw, auto);
     grid-template-columns: repeat(2, 1fr);
-    gap: .4em;
+    gap: .4rem;
 }
 .main-project {
     grid-area: 1 / span 2;
@@ -28,8 +28,8 @@
 .btn {
     @include font-size(1);
     width: min-content;
-    padding: 10px;
-    margin: 10px;
+    padding: 2rem;
+    margin: 2rem;
     border: solid 3px $tertiary-color-200;
     @include button();
 }

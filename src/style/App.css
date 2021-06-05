@@ -1,3 +1,49 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +51,15 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
 }
 
 .project-list {
@@ -15,7 +70,7 @@
   grid-auto-rows: minmax(25vw, auto);
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  gap: .4em;
+  gap: .4rem;
 }
 
 .main-project {
@@ -42,28 +97,28 @@
 }
 
 .project-name {
-  font-size: 32.36px;
+  font-size: 3.236rem;
   color: #664200;
 }
 
 .project-live-server, .project-repository {
-  font-size: 16.18px;
+  font-size: 1.618rem;
 }
 
 .btn {
-  font-size: 16.18px;
+  font-size: 1.618rem;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  padding: 10px;
-  margin: 10px;
+  padding: 2rem;
+  margin: 2rem;
   border: solid 3px #ffa600;
   text-decoration: none;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
   background-color: white;
   color: #664200;
-  padding: .2em;
+  padding: .2rem;
 }
 
 .btn:hover {
@@ -91,20 +146,20 @@ body {
 }
 
 h1 {
-  font-size: 48.54px;
+  font-size: 4.854rem;
 }
 
 h2 {
-  font-size: 32.36px;
+  font-size: 3.236rem;
 }
 
 h3 {
-  font-size: 32.36px;
+  font-size: 3.236rem;
   margin: .1em 0;
 }
 
 p {
-  font-size: 16.18px;
+  font-size: 1.618rem;
 }
 
 nav {
@@ -119,18 +174,18 @@ nav {
 }
 
 nav .link {
-  font-size: 32.36px;
+  font-size: 3.236rem;
   padding: .2em;
 }
 
 a, .link {
-  font-size: 16.18px;
+  font-size: 1.618rem;
   text-decoration: none;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
   background-color: white;
   color: #664200;
-  padding: .2em;
+  padding: .2rem;
 }
 
 a:hover, .link:hover {
@@ -201,8 +256,7 @@ footer a:focus {
 }
 
 #about-page .face-picture-container {
-  width: 40vw;
-  height: 40vw;
+  width: 40%;
   margin: 2rem auto 0;
 }
 
@@ -236,7 +290,7 @@ footer a:focus {
 
 @media only screen and (min-width: 240px) and (max-width: 720px) {
   .project-list {
-    width: 100vw;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -254,14 +308,14 @@ footer a:focus {
         flex-wrap: wrap;
   }
   header {
-    font-size: 32.36px;
+    font-size: 3.236rem;
   }
   .project {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    padding: 10px;
-    margin: 10px;
+    padding: 1rem;
+    margin: 1rem;
   }
   .btn {
     display: none;
