@@ -1,5 +1,6 @@
 import React from 'react';
-import facePic from "./face.jpg"
+import facePic from "./face.jpg";
+import Footer from "./Footer";
 
 export default function AboutPage() {
     return (
@@ -19,11 +20,7 @@ export default function AboutPage() {
             <div className="face-picture-container">
                 <img src={facePic} />
             </div>
-            <footer>
-                <a href="mailto:jacobshomali3@gmail.com">jacobshomali3@gmail.com</a>
-                <a href="tel:+8102315851">810-231-5851</a>
-                <address>6402 Maplebrook Lane, Flint MI, 48507</address>
-            </footer>
+            <Footer />
         </div>
     )
 }

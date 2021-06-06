@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectList from "./ProjectList";
+import Footer from "./Footer";
 import useMenuSelector from "../hooks/useMenuSelector";
 
 export default function ProjectPage() {
@@ -33,11 +34,7 @@ export default function ProjectPage() {
                     className="btn right-btn">Right</button> 
             </div>
             <ProjectList projects={projects} mainProject={mainProject}/>
-            <footer>
-                <a href="mailto:jacobshomali3@gmail.com">jacobshomali3@gmail.com</a>
-                <a href="tel:+8102315851">810-231-5851</a>
-                <address>6402 Maplebrook Lane, Flint MI, 48507</address>
-            </footer>
+            <Footer />
         </div>
     )
 }

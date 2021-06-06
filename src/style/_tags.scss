@@ -23,11 +23,19 @@ nav {
     .link {
         @include font-size(2);
         padding: .2rem;
+
     }
 }
 a, .link {
     @include font-size(1);
     @include button();
+   
+}
+a:not(.link) {
+    &:visited {
+        background-color: $tertiary-color-300;
+        color: $secondary-color;
+    }
 }
 img {
     width: 100%;

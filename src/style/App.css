@@ -79,7 +79,7 @@ body {
 }
 
 .project {
-  border: solid 3px #ffa600;
+  border: solid 3px #0004ff;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,11 +94,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-weight: 900;
 }
 
 .project-name {
   font-size: 3.236rem;
-  color: #664200;
+  color: #000266;
 }
 
 .project-live-server, .project-repository {
@@ -112,23 +113,20 @@ body {
   width: min-content;
   padding: 1rem 2rem !important;
   margin: 2rem;
-  border: solid 3px #ffa600;
+  border: solid 3px #0004ff;
+  border-radius: 10px;
+  cursor: pointer;
   text-decoration: none;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
   background-color: white;
-  color: #664200;
+  color: #000266;
   padding: .2rem;
 }
 
-.btn:hover {
-  background-color: #664200;
-  color: white;
-}
-
-.btn:focus {
+.btn:focus, .btn:hover {
   outline: none;
-  background-color: #664200;
+  background-color: #000266;
   color: white;
 }
 
@@ -142,7 +140,7 @@ body {
 }
 
 body {
-  background-color: #ffedcc;
+  background-color: #cccdff;
 }
 
 h1 {
@@ -170,7 +168,7 @@ nav {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background-color: white;
-  color: #ffedcc;
+  color: #cccdff;
 }
 
 nav .link {
@@ -180,22 +178,23 @@ nav .link {
 
 a, .link {
   font-size: 1.618rem;
+  cursor: pointer;
   text-decoration: none;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
   background-color: white;
-  color: #664200;
+  color: #000266;
   padding: .2rem;
 }
 
-a:hover, .link:hover {
-  background-color: #664200;
+a:focus, a:hover, .link:focus, .link:hover {
+  outline: none;
+  background-color: #000266;
   color: white;
 }
 
-a:focus, .link:focus {
-  outline: none;
-  background-color: #664200;
+a:not(.link):visited {
+  background-color: #000266;
   color: white;
 }
 
@@ -229,18 +228,18 @@ footer a {
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
   color: black;
-  background-color: #ffedcc;
+  background-color: #cccdff;
   text-decoration: underline;
 }
 
 footer a:hover {
-  color: #ffedcc;
+  color: #cccdff;
   background-color: black;
 }
 
 footer a:focus {
   outline: none;
-  color: #ffedcc;
+  color: #cccdff;
   background-color: black;
 }
 
