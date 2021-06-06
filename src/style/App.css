@@ -266,23 +266,23 @@ footer a:focus {
 
 @-webkit-keyframes project-page {
   from {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   to {
-    -webkit-transform: translateX(0vw);
-            transform: translateX(0vw);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @keyframes project-page {
   from {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   to {
-    -webkit-transform: translateX(0vw);
-            transform: translateX(0vw);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -309,9 +309,7 @@ footer a:focus {
     font-size: 3.236rem;
   }
   .project {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width: 100%;
     padding: 1rem;
     margin: 1rem;
   }

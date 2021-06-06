@@ -66,10 +66,10 @@
 // 7. animations
 @keyframes project-page {
     from {
-        transform: translateX(-100vw);
+        transform: translateX(-100%);
     }
     to {
-        transform: translateX(0vw);
+        transform: translateX(0%);
     }
 }
 
@@ -87,7 +87,7 @@
         @include font-size(2);
     }
     .project {
-        width: max-content;
+        width: 100%;
         padding: 1rem;
         margin: 1rem;
     }
