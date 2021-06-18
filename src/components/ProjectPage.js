@@ -9,6 +9,7 @@ export default function ProjectPage() {
         "job-postings-react",
         "hearthstone-react-2",
         "coal-miner-fixed",
+        "rock-paper-scissors",
         "face-maker-2",
         "countdown-app",
         "zelda",
