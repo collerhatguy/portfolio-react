@@ -17,9 +17,9 @@ export default function AboutPage() {
                 attending Lambda’s coding bootcamp. I have been programming 
                 on my own for several months now and plan to do so for my whole life.
             </p>
-            <div className="face-picture-container">
+            {/* <div className="face-picture-container">
                 <img src={facePic} />
-            </div>
+            </div> */}
             <Footer />
         </div>
     )

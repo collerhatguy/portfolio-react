@@ -8,16 +8,16 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to="/projects" className="link">
+        <Link to="/" exact className="link">
           My Projects
         </Link>
-        <Link to="" exact className="link">
+        <Link to="/about" className="link">
           About Page
         </Link>
       </nav>
       <Switch>
-        <Route path="/projects" component={ProjectPage}/>
-        <Route path="" exact component={AboutPage}/>
+        <Route path="/" exact component={ProjectPage}/>
+        <Route path="/about" component={AboutPage}/>
       </Switch>
     </Router>
   );
