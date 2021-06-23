@@ -245,17 +245,24 @@ footer a:focus, footer a:hover {
 #about-page {
   -webkit-animation: project-page 300ms ease-in-out forwards;
           animation: project-page 300ms ease-in-out forwards;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#about-page .face-picture-container {
-  width: 40%;
-  margin: 2rem auto 0;
-}
-
-#about-page img {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
+#about-page .text-container {
+  width: 50%;
 }
 
 @-webkit-keyframes project-page {
@@ -313,6 +320,9 @@ footer a:focus, footer a:hover {
   .project-photo {
     width: 70vw;
     height: 30vw;
+  }
+  #about-page .text-container {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=App.css.map */
