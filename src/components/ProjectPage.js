@@ -5,6 +5,7 @@ import useMenuSelector from "../hooks/useMenuSelector";
 
 export default function ProjectPage() {
     const projects = [
+        "countries",
         "crowd-funding-frontend-mentor-3",
         "job-postings-react",
         "hearthstone-react-2",
