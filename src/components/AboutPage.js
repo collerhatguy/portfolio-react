@@ -1,5 +1,4 @@
 import React from 'react';
-import facePic from "./face.jpg";
 import Footer from "./Footer";
 
 export default function AboutPage() {
