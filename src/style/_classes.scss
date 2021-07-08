@@ -2,8 +2,8 @@
 .project-list {
     // I want to set it uo so that the top project has a whole row to itself
     display: grid;
-    grid-template-rows: 40vw;
-    grid-auto-rows: minmax(25vw, auto);
+    grid-template-rows: 50vw;
+    grid-auto-rows: minmax(35vw, auto);
     grid-template-columns: repeat(2, 1fr);
     gap: .4rem;
 }
@@ -41,4 +41,17 @@
     width: 50%;
     height: 100%;
     margin-bottom: 1rem;
+}
+.technologies {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.technology {
+    text-decoration: underline;
+    color: $tertiary-color-300;
+    padding: 1rem;
+    margin: 5px;
+    margin-top: 0;
 }

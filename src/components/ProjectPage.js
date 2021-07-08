@@ -2,26 +2,9 @@ import React from "react";
 import ProjectList from "./ProjectList";
 import Footer from "./Footer";
 import useMenuSelector from "../hooks/useMenuSelector";
+import projects from "../project-data";
 
 export default function ProjectPage() {
-    const projects = [
-        "countries",
-        "crowd-funding-frontend-mentor-3",
-        "job-postings-react",
-        "hearthstone-react-2",
-        "coal-miner-fixed",
-        "rock-paper-scissors",
-        "face-maker-2",
-        "countdown-app",
-        "zelda",
-        "calculator",
-        "front-end-mentor-2",
-        "front-end-mentor-1",
-        "JosephVoelker",
-        "shapeMaker",
-        "christmasTree",
-        "Tyson.css",
-    ]
     const [handleProjectLeft, handleProjectRight, mainProject] = useMenuSelector(projects);
     return (
         <div id="project-page">
