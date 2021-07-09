@@ -6,6 +6,11 @@ const projects = [
         technologies: ["React", "React-Router", "SCSS", "API"]
     },
     {
+        repoName:"easy-bank-landing",
+        siteName: "Bank Landing Page",
+        technologies: ["Angular", "Typescript",  "SCSS"]
+    },
+    {
         repoName:"todo-angular",
         siteName: "Jacob's Todo List",
         technologies: ["Angular", "Typscript", "SCSS"]

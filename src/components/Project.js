@@ -4,7 +4,7 @@ export default function Project({project, indexOfMain, index}) {
     return (
         <div className={`project ${indexOfMain === index ? "main-project" : ""}`}>
             <h2 className="project-name">{project.siteName}</h2>
-                <h3>Made with:</h3>
+            <h3>Made with:</h3>
             <div className="technologies">
                 {project.technologies.map(tech => <h4 className="technology">{tech}</h4>)}
             </div>

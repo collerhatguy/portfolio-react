@@ -9,7 +9,7 @@ export default function ProjectPage() {
     return (
         <div id="project-page">
             <header>
-                <h1>Jacobs Projects:</h1>
+                <h2>Jacobs Projects:</h2>
             </header>
             <div className="buttons-container">
                 <button 
